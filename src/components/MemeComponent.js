@@ -1,5 +1,4 @@
 import React from "react";
-import "./meme.css";
 
 function MemeComponent(props) {
   
@@ -11,7 +10,7 @@ function MemeComponent(props) {
           name="topText"
           value={props.data.topText}
           onChange={props.handleChange}
-          placeholder="Top Text"
+          placeholder="Add Top Text"
         />
 
         <input
@@ -19,11 +18,12 @@ function MemeComponent(props) {
           name="bottomText"
           value={props.data.bottomText}
           onChange={props.handleChange}
-          placeholder="Bottom Text"
+          placeholder="Add Bottom Text"
         />
 
-        <button>Gen</button>
+        <button>Generate</button>
       </form>
+
       <div id="capture" className="meme">
         <img src={props.data.randomImg} alt="" />
         <h2 className="top">{props.data.topText}</h2>
@@ -32,6 +32,5 @@ function MemeComponent(props) {
     </main>
   );
 }
-
 
 export default MemeComponent;

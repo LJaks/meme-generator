@@ -1,3 +1,24 @@
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background: #41a594;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #150424, #41a594);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a0845, #41a594); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header > img {
+  height: 80%;
+  margin-left: 10%;
+}
+
+header > p {
+  font-family: VT323, monospace;
+  color: whitesmoke;
+  font-size: 50px;
+  margin-left: 60px;
+}
+
 main {
   padding: 20px 50px;
 }
@@ -65,12 +86,14 @@ main {
   font-size: 25px;
   letter-spacing: 1.5px;
   color: white;
-  background: #6441a5;
+  background: #41a594;
   border-radius: 2px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 .meme-form > button:hover {
   cursor: pointer;
+  background: #2a0845;
+  transition: ease-out 0.2s;
 }
 .meme-form > button:active {
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
@@ -101,3 +124,4 @@ main {
   font-size: 25px;
   text-align: center;
 }
+
