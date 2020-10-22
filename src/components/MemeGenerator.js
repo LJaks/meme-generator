@@ -8,7 +8,7 @@ class MemeGenerator extends React.Component {
       topText: "",
       bottomText: "",
       randomImg: "http://i.imgflip.com/1bij.jpg",
-      allMemeImgs: []
+      allMemeImgs: [],
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -20,19 +20,14 @@ class MemeGenerator extends React.Component {
       [name]: value,
     });
   }
-
   handleSubmit(event) {
     event.preventDefault();
     const randomNum = Math.floor(Math.random() * this.state.allMemeImgs.length);
-    // get a random int (index in the array)
     const randomMemeImg = this.state.allMemeImgs[randomNum].url;
-    // get the meme from that index
-    // set `randomImg` to the `.url` of the random item I grabbed
     this.setState({
       randomImg: randomMemeImg,
     });
   }
-
   componentDidMount() {
     fetch("https://api.imgflip.com/get_memes")
       .then((response) => response.json())

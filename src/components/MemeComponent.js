@@ -1,7 +1,6 @@
 import React from "react";
 
 function MemeComponent(props) {
-  
   return (
     <main>
       <form className="meme-form" onSubmit={props.handleSubmit}>

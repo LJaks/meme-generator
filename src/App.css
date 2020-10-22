@@ -2,9 +2,9 @@ header {
   height: 100px;
   display: flex;
   align-items: center;
-  background: #41a594;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #150424, #41a594);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2a0845, #41a594); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #41a594;
+  background: -webkit-linear-gradient(to right, #150424, #41a594);
+  background: linear-gradient(to right, #2a0845, #41a594);
 }
 
 header > img {
@@ -101,27 +101,22 @@ main {
 }
 
 .meme-form > input::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
   font-family: VT323, monospace;
   font-size: 25px;
   text-align: center;
 }
 .meme-form > input::-moz-placeholder {
-  /* Firefox 19+ */
   font-family: VT323, monospace;
   font-size: 25px;
   text-align: center;
 }
 .meme-form > input:-ms-input-placeholder {
-  /* IE 10+ */
   font-family: VT323, monospace;
   font-size: 25px;
   text-align: center;
 }
 .meme-form > input:-moz-placeholder {
-  /* Firefox 18- */
   font-family: VT323, monospace;
   font-size: 25px;
   text-align: center;
 }
-
